@@ -1,0 +1,14 @@
+<h1>Failed Charges</h1>
+<div class="failed-charges-list">
+  <%= render partial: 'charges/transaction', locals: {transactions: @f_transactions, bkcolor: '#FF0000'} %>
+</div>
+
+<h1>Disputed Charges</h1>
+<div class="disputed-charges-list">
+  <%= render partial: 'charges/transaction', locals: {transactions: @d_transactions, bkcolor: '#FF5400'} %>
+</div>
+
+<h1>Successful Charges</h1>
+<div class="success-charges-list">
+ <%= render partial: 'charges/transaction', locals: {transactions: @s_transactions, bkcolor: ''} %>
+</div>

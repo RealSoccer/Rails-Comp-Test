@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Amount</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% transactions.each do |tras| %>
+    <tr style="background-color:<%= bkcolor %>">
+      <td><%= tras.customer.first_name + ' ' + tras.customer.last_name %></td>
+      <td><%= tras.amount %></td>
+      <td><%= tras.created %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
